@@ -1,9 +1,8 @@
 # EdgeOS
 
-[![Downloads](https://img.shields.io/github/downloads/jonny550993/ha-edgeos/total?label=downloads)](https://github.com/jonny550993/ha-edgeos/releases)
+[![Downloads](https://img.shields.io/github/downloads/jonny550993/ha-edgeos/total?label=downloads)](https://github.com/jonny550993/ha-edgeos/releases) [![Version](https://img.shields.io/github/v/release/jonny550993/ha-edgeos?display_name=tag&sort=semver)](https://github.com/jonny550993/ha-edgeos/releases/latest) [![HACS Compatible](https://img.shields.io/badge/HACS-Compatible-41BDF5.svg)](https://hacs.xyz/)
 
-[![Version](https://img.shields.io/github/v/release/jonny550993/ha-edgeos?display_name=tag&sort=semver)](https://github.com/jonny550993/ha-edgeos/releases/latest)
-[![HACS Compatible](https://img.shields.io/badge/HACS-Compatible-41BDF5.svg)](https://hacs.xyz/)
+
 ## Maintenance Notice
 
 This integration is no longer actively developed, as I no longer have access to my ER4 for testing.
