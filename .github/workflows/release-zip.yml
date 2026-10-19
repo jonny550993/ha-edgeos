@@ -1,6 +1,8 @@
 name: Build HACS Release ZIP
 
 on:
+  push:
+    branches: [main]
   release:
     types: [published]
   workflow_dispatch:
@@ -20,19 +22,18 @@ jobs:
           zip -r "$GITHUB_WORKSPACE/edgeos.zip" .
           cd "$GITHUB_WORKSPACE"
           sha256sum edgeos.zip > edgeos.zip.sha256
-      - name: Create release if needed, then upload ZIP
+      - name: Create versioned release if needed, then upload ZIP
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           if [ "${{ github.event_name }}" = "release" ]; then
             TAG="${{ github.event.release.tag_name }}"
           else
-            TAG="$(gh release list --limit 1 --json tagName --jq '.[0].tagName // empty')"
-          fi
-
-          if [ -z "$TAG" ]; then
             VERSION="$(python -c 'import json; print(json.load(open("custom_components/edgeos/manifest.json"))["version"])')"
             TAG="v$VERSION"
+          fi
+
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
             gh release create "$TAG" --title "$TAG" --generate-notes
           fi
 
