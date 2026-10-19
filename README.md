@@ -1,5 +1,6 @@
 # EdgeOS
 
+[![Downloads](https://img.shields.io/github/downloads/jonny550993/ha-edgeos/total?label=downloads)](https://github.com/jonny550993/ha-edgeos/releases)
 ## Maintenance Notice
 
 This integration is no longer actively developed, as I no longer have access to my ER4 for testing.
