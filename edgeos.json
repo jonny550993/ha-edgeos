@@ -1,6 +1,6 @@
 {
   "edgeos": {
-    "version": "2.0.0",
+    "version": "2.2.1",
     "local_location": "/custom_components/edgeos/__init__.py",
     "remote_location": "https://raw.githubusercontent.com/jonny550993/ha-edgeos/master/custom_components/edgeos/__init__.py",
     "visit_repo": "https://github.com/jonny550993/ha-edgeos",

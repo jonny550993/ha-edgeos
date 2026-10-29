@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.1.9
+## 2.2.1
 
 - Initialize data using `async_request_refresh` instead of `async_config_entry_first_refresh` to remove warning message
 
