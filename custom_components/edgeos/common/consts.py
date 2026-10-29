@@ -42,7 +42,7 @@ ADD_COMPONENT_SIGNALS = [
 MAXIMUM_RECONNECT = 3
 CONFIGURATION_FILE = f"{DOMAIN}.config.json"
 
-INVALID_TOKEN_SECTION = "https://github.com/elad-bar/ha-edgeos#invalid-token"
+INVALID_TOKEN_SECTION = "https://github.com/jonny550993/ha-edgeos#invalid-token"
 
 API_URL_TEMPLATE = "https://{}"
 WEBSOCKET_URL_TEMPLATE = "wss://{}/ws/stats"

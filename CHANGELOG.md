@@ -14,35 +14,35 @@
 
 ## 2.1.6
 
-- Fix update interface state [#145](https://github.com/elad-bar/ha-edgeos/issues/145)
+- Fix update interface state [#145](https://github.com/jonny550993/ha-edgeos/issues/145)
 
 ## 2.1.5
 
-- Handling undefined interface types [#137](https://github.com/elad-bar/ha-edgeos/issues/137)
+- Handling undefined interface types [#137](https://github.com/jonny550993/ha-edgeos/issues/137)
 
 ## 2.1.4
 
-- Update supported interfaces, including interface type [#137](https://github.com/elad-bar/ha-edgeos/issues/137)
+- Update supported interfaces, including interface type [#137](https://github.com/jonny550993/ha-edgeos/issues/137)
 
 ## 2.1.3
 
-- Update supported interfaces [#137](https://github.com/elad-bar/ha-edgeos/issues/137)
+- Update supported interfaces [#137](https://github.com/jonny550993/ha-edgeos/issues/137)
 - Removed unused constants
 - Fix status entities, if EdgeOS user is admin, the switch will be available, if not, binary sensor
 - Adjusted the code of entity validations (whether) to present or not
 
 ## 2.1.2
 
-- Re-add interface status (Binary Sensor and Switch) [#135](https://github.com/elad-bar/ha-edgeos/issues/135)
+- Re-add interface status (Binary Sensor and Switch) [#135](https://github.com/jonny550993/ha-edgeos/issues/135)
 
 ## 2.1.1
 
-- Fix interface received rate sensor [#133](https://github.com/elad-bar/ha-edgeos/issues/133)
-- Re-added ability to set unit (Byte, KByte, MByte) - using SELECT component [#133](https://github.com/elad-bar/ha-edgeos/issues/133)
+- Fix interface received rate sensor [#133](https://github.com/jonny550993/ha-edgeos/issues/133)
+- Re-added ability to set unit (Byte, KByte, MByte) - using SELECT component [#133](https://github.com/jonny550993/ha-edgeos/issues/133)
 - Re-added sensor state number format (number of digits):
   - Data (Traffic / Rate) - 0 digits if unit is bytes, otherwise - 3 digits
   - Devices, Dropped, Errors, Packets - 3 digits
-- Re-added support for switch interfaces [#130](https://github.com/elad-bar/ha-edgeos/issues/130)
+- Re-added support for switch interfaces [#130](https://github.com/jonny550993/ha-edgeos/issues/130)
 
 ## 2.1.0
 
@@ -91,7 +91,7 @@ _Minimum HA Version: 2024.1.0_
 
 Configuration breaking change
 
-- Adopt Unit of Data & Information from HA Core [#90](https://github.com/elad-bar/ha-edgeos/issues/90) [#84](https://github.com/elad-bar/ha-edgeos/issues/84)
+- Adopt Unit of Data & Information from HA Core [#90](https://github.com/jonny550993/ha-edgeos/issues/90) [#84](https://github.com/jonny550993/ha-edgeos/issues/84)
 
   Changing the units will be available per entity instead of maintaining it with select component, native unit is bytes - B (information) or B/s (traffic)
 
@@ -101,7 +101,7 @@ Configuration breaking change
 
 - Change units from Bytes, KBytes and MBytes to B, KB and MB, if the configured unit was other than Bytes, please re-configure it
 - Last activity as seconds to return without milliseconds
-- Upgrade pre-commit-configuration by [@tetienne](https://github.com/tetienne) [PR #91](https://github.com/elad-bar/ha-edgeos/pull/91)
+- Upgrade pre-commit-configuration by [@tetienne](https://github.com/tetienne) [PR #91](https://github.com/jonny550993/ha-edgeos/pull/91)
 - Fix integration reload after changing configuration
 
 ## 2.0.25
@@ -110,8 +110,8 @@ Configuration breaking change
 - Removed debug API
 - Avoid sending ping when no active WebSockets connection
 - Fix warning message regarding of invalid unit's translation
-- Fix units format [#90](https://github.com/elad-bar/ha-edgeos/issues/90)
-- Fix last restart sensor, switched to uptime in seconds [#94](https://github.com/elad-bar/ha-edgeos/issues/94)
+- Fix units format [#90](https://github.com/jonny550993/ha-edgeos/issues/90)
+- Fix last restart sensor, switched to uptime in seconds [#94](https://github.com/jonny550993/ha-edgeos/issues/94)
 
 ## 2.0.24
 
@@ -186,7 +186,7 @@ For now, special interface do not support to turn on / off
 
 ## 2.0.13
 
-- Add support for all interfaces but `loopback` [#76](https://github.com/elad-bar/ha-edgeos/issues/76)
+- Add support for all interfaces but `loopback` [#76](https://github.com/jonny550993/ha-edgeos/issues/76)
 - Improve WS connection management
 - Fix WS ping message
 - Change interval of ping message
@@ -195,7 +195,7 @@ For now, special interface do not support to turn on / off
 
 ## 2.0.12
 
-- Fix wrong parameters for service validation [#77](https://github.com/elad-bar/ha-edgeos/issues/77)
+- Fix wrong parameters for service validation [#77](https://github.com/jonny550993/ha-edgeos/issues/77)
 
 ## 2.0.11
 
@@ -228,7 +228,7 @@ For now, special interface do not support to turn on / off
 
 ## 2.0.4
 
-- Add IP address to status switch of its interface [#71](https://github.com/elad-bar/ha-edgeos/issues/71)
+- Add IP address to status switch of its interface [#71](https://github.com/jonny550993/ha-edgeos/issues/71)
 - Constants clean up
 - Add ability to set the interval to update data and entities separately, to update use the `edgeos.update_configuration` service and set the number of seconds per `update_api_interval` and/or `update_entities_interval` parameters, defaults are API: 30 seconds, Entities: 1 second
 - Improved logic of service `edgeos.update_configuration`
@@ -237,7 +237,7 @@ For now, special interface do not support to turn on / off
 
 ## 2.0.3
 
-- Fix wrong parameter for CPU [#70](https://github.com/elad-bar/ha-edgeos/issues/70)
+- Fix wrong parameter for CPU [#70](https://github.com/jonny550993/ha-edgeos/issues/70)
 - Another fix json serialization when saving debug data
 
 ## 2.0.2
@@ -319,7 +319,7 @@ New features:
 
 ## 1.2.5
 
-- Add Brazilian Portuguese Translation [\#66](https://github.com/elad-bar/ha-edgeos/pull/66) by [@LeandroIssa](https://github.com/LeandroIssa)
+- Add Brazilian Portuguese Translation [\#66](https://github.com/jonny550993/ha-edgeos/pull/66) by [@LeandroIssa](https://github.com/LeandroIssa)
 
 ## 1.2.4
 
@@ -364,7 +364,7 @@ BREAKING CHANGES!
 
 ## v1.1.5
 
-- Fixed integration fails to load with EdgeOS version older than 2.0.9 [\#53](https://github.com/elad-bar/ha-edgeos/pull/53)
+- Fixed integration fails to load with EdgeOS version older than 2.0.9 [\#53](https://github.com/jonny550993/ha-edgeos/pull/53)
 
 ## v1.1.4
 
@@ -372,7 +372,7 @@ BREAKING CHANGES!
 
 ## v1.1.3
 
-- Fixed monitored_devices appear as disconnected [\#32](https://github.com/elad-bar/ha-edgeos/pull/32) by [@shlomki](https://github.com/shlomki)
+- Fixed monitored_devices appear as disconnected [\#32](https://github.com/jonny550993/ha-edgeos/pull/32) by [@shlomki](https://github.com/shlomki)
 - Added documentation of how to set manually log level as debug
 
 ## v1.1.2
@@ -383,7 +383,7 @@ BREAKING CHANGES!
 
 **Fixed bugs:**
 
-- Fixed interface parameter that should indicate whether an interface connected or not (l1up vs. up) [\#34](https://github.com/elad-bar/ha-edgeos/pull/34)
+- Fixed interface parameter that should indicate whether an interface connected or not (l1up vs. up) [\#34](https://github.com/jonny550993/ha-edgeos/pull/34)
 
 ## 2020-09-17
 
@@ -406,7 +406,7 @@ BREAKING CHANGES!
 
 **Fixed bugs:**
 
-- Don't block startup of Home Assistant [\#36](https://github.com/elad-bar/ha-edgeos/pull/36)
+- Don't block startup of Home Assistant [\#36](https://github.com/jonny550993/ha-edgeos/pull/36)
 
 ## 2020-07-22
 
@@ -460,12 +460,12 @@ BREAKING CHANGES!
 **Implemented enhancements:**
 
 - Integration's options - Renamed `Update interval` to `Update entities interval` (will reset the value to default in the first run)
-- Integration's options - Added `Update API interval` to set the interval in seconds of the component to access EdgeOS API to get new devices and router settings, default=60 [\#27](https://github.com/elad-bar/ha-edgeos/issues/27)
+- Integration's options - Added `Update API interval` to set the interval in seconds of the component to access EdgeOS API to get new devices and router settings, default=60 [\#27](https://github.com/jonny550993/ha-edgeos/issues/27)
 - Improved the logic of heartbeat to take place every 30 seconds for both WebSocket and API connections
 
 **Fixed bugs:**
 
-- Fix API disconnection that causes "Failed to load devices data" errors [\#29](https://github.com/elad-bar/ha-edgeos/issues/29)
+- Fix API disconnection that causes "Failed to load devices data" errors [\#29](https://github.com/jonny550993/ha-edgeos/issues/29)
 - Fix error message on HA termination
 
 ## 2020-05-08 #2
@@ -488,7 +488,7 @@ BREAKING CHANGES!
 
 **Fixed bugs:**
 
-- Fix WebSocket disconnections [\#26](https://github.com/elad-bar/ha-edgeos/issues/26)
+- Fix WebSocket disconnections [\#26](https://github.com/jonny550993/ha-edgeos/issues/26)
 
 ## 2020-05-02
 
@@ -513,7 +513,7 @@ BREAKING CHANGES!
 
 **Fixed bugs:**
 
-- Invalid credentials to EdgeOS Router when using IP [\#25](https://github.com/elad-bar/ha-edgeos/issues/25)
+- Invalid credentials to EdgeOS Router when using IP [\#25](https://github.com/jonny550993/ha-edgeos/issues/25)
 
 ## 2020-04-28 #2
 
@@ -543,7 +543,7 @@ BREAKING CHANGES!
 
 **Implemented enhancements:**
 
-- Simplified the way calculating whether device is connected or not, based on report of traffic analysis instead of calculating amount of traffic (bps) over the last 3 minutes [\#24](https://github.com/elad-bar/ha-edgeos/issues/24)
+- Simplified the way calculating whether device is connected or not, based on report of traffic analysis instead of calculating amount of traffic (bps) over the last 3 minutes [\#24](https://github.com/jonny550993/ha-edgeos/issues/24)
 - Moved service `edgeos.save_debug_data` to Integration -> Options as configuration (that being reset after doing the action once)
 - Moved service `edgeos.log_events` to Integration -> Options as configuration to toggle upon need
 - Added ability to configure the log level of the component from Integration - Options, more details in README
@@ -552,23 +552,23 @@ BREAKING CHANGES!
 
 **Fixed bugs:**
 
-- Fix connection maximum attempts and added keep-alive WS message every 30 seconds [\#21](https://github.com/elad-bar/ha-edgeos/issues/21)
+- Fix connection maximum attempts and added keep-alive WS message every 30 seconds [\#21](https://github.com/jonny550993/ha-edgeos/issues/21)
 
 ## 2020-04-20 #1
 
 **Fixed bugs:**
 
-- Missing resource for update interval field [\#19](https://github.com/elad-bar/ha-edgeos/issues/19)
+- Missing resource for update interval field [\#19](https://github.com/jonny550993/ha-edgeos/issues/19)
 
 ## 2020-04-18
 
 **Implemented enhancements:**
 
 - Added changelog
-- Added ability to configure update entities interval in seconds (Integrations -> Integration Name -> Options) [\#19](https://github.com/elad-bar/ha-edgeos/issues/19) [\#15](https://github.com/elad-bar/ha-edgeos/issues)
-- Added instructions how to install in HACS [\#16](https://github.com/elad-bar/ha-edgeos/issues/16)
+- Added ability to configure update entities interval in seconds (Integrations -> Integration Name -> Options) [\#19](https://github.com/jonny550993/ha-edgeos/issues/19) [\#15](https://github.com/jonny550993/ha-edgeos/issues)
+- Added instructions how to install in HACS [\#16](https://github.com/jonny550993/ha-edgeos/issues/16)
 - Added password encryption upon saving the integration settings
-- Improved drop-down logic to choose device trackers, monitored devices and interfaces [\#9](https://github.com/elad-bar/ha-edgeos/issues/9)
+- Improved drop-down logic to choose device trackers, monitored devices and interfaces [\#9](https://github.com/jonny550993/ha-edgeos/issues/9)
 - Moved code to new file structure
 - More logs added for easier debugging
 
